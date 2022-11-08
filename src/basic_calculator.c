@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include<math.h>
 
+//love you parnika 
+
 int main(){
 
    char operator;

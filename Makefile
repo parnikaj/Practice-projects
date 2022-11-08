@@ -2,7 +2,8 @@ SDIR = src
 IDIR = inc
 LDIR = lib
 
-SRCS = $(shell find $(SDIR) -name *.c)
+#SRCS = $(shell find $(SDIR) -name *.c)
+SRCS = src/circle.c
 OBJS = $(patsubst $(SDIR)/%.c, $(LDIR)/%.o, $(SRCS))
 BINNAME = program
 

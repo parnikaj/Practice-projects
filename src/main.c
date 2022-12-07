@@ -3,16 +3,40 @@
 
 int main(){
 
-const double PI = 3.14159; 
-double radius; 
-double circumference; 
+   char operator;
+   double a;
+   double b;
+   double result;
 
-printf("\nRadius of the circle:"); 
-scanf("%lf",&radius); 
+   printf("\nEnter an operator : ");
+   scanf("%c", &operator);
 
-circumference = PI * 2 * radius; 
+   printf("Enter number 1: ");
+   scanf("%lf", &a);
 
-printf("\n:The circumference is:%lf",circumference);
+   printf("Enter number 2: ");
+   scanf("%lf", &b);
 
-  return 0; 
+   switch(operator){
+      case '+':
+         result = a + b;
+         printf("\nresult: %lf", result);
+         break;
+      case '-':
+         result = a - b;
+         printf("\nresult: %lf", result);
+         break;
+      case '*':
+         result = a * b;
+         printf("\nresult: %lf", result);
+         break;
+      case '/':
+         result = a / b;
+         printf("\nresult: %lf", result);
+         break;
+      default:
+         printf("%c is not valid", operator);
+   }
+
+   return 0;
 }

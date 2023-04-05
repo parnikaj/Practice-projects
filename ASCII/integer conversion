@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+  int main()
+  {
+       char ASCII;
+       printf("Please enter a character: ");
+       scanf("%c", &ASCII);
+       printf("%i\n", ASCII);
+      
+       int integer;
+       printf("Please enter an integer between 0 - 127: ");
+       scanf("%d", &integer);
+       printf("%c\n", integer); 
+       
+       //Math with ASCII: 
+       char math = 'A' + '\t';
+       printf("A(65) + \\t(9) = %c(%d)\n", math, math);
+       
+       return 0;
+  }
